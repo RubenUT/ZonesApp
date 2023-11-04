@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <ion-button id="back-button" (click)="goToHome()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
+  <ion-card>
+    <img src="assets/img/ekbalam.jpg">
+    <h1>Ek Balam</h1>
+    <p>
+      Ek Balam es un sitio arqueológico maya en Yucatán, México. Está localizado a 30 km al norte de la ciudad de
+      Valladolid, a 2 km del poblado maya actual de Ek Balam. <br><br> Fue una capital con gran riqueza, con una
+      población de 12 a 18 mil habitantes en su núcleo principal. Se dice que fue fundada por un señor llamado Ek'Balam
+      o Coch Cal Balam, quien llego desde el Oriente y gobernó los primeros 40 años. <br><br>
+      Posee 45 estructuras y está rodeada por dos murallas concéntricas de piedra, y otra más que une a los edificios
+      centrales. Estas murallas tuvieron fines defensivos y para el control del acceso. Tiene un juego de pelota y un
+      arco muy hermoso donde desembocaba un sacbé (camino sagrado), que en épocas antiguas conectaba a los reinos mayas;
+      también hay estelas y las llamadas serpientes jeroglíficas, monumentos bellamente labrados en bloques de piedra. <br><br>
+      Las estructuras tienen varios estilos arquitectónicos, pero hay detalles que las hacen únicas, como imágenes con
+      alas que semejan ángeles.
+    </p>
+    <div id="interes">
+      <ion-button shape="round" (click)="redirectToEkBalamRA()">Ver en RA</ion-button>
+    </div>
+  </ion-card>
+
+  <div id="map"></div>
+</ion-content>

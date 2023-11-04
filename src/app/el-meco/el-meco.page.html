@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <ion-button id="back-button" (click)="goToHome()">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
+  <ion-card>
+    <img
+      src="assets/img/el-meco.jpg">
+    <h1>El Meco</h1>
+    <p>El Meco es un yacimiento arqueológico de la cultura maya precolombina, localizado en el sureste de México, en el
+      territorio que hoy ocupa el estado de Quintana Roo, unos ocho kilómetros al norte del centro de Cancún.
+      <br><br>Aunque en la actualidad es poco conocido, este sitio arqueológico tuvo una gran relevancia para el mundo
+      maya
+      de la zona del actual Cancún. Se estima que su fundación ocurrió durante el periodo clásico temprano (250 a 600
+      a.C.), al igual que la zonas
+      arqueológica de Tulum y de Xel-Há, de vestigios desconocidos. <br><br> Sirvió como puerto comercial y centro de
+      control de la navegación de la bahía. Se desconoce el nombre original en maya, aunque se sospecha que pudo ser
+      “Belma”.
+    </p>
+    <div id="interes">
+
+      <ion-button shape="round" (click)="redirectToElMecoRA()">Ver en RA</ion-button>
+    </div>
+  </ion-card>
+</ion-content>

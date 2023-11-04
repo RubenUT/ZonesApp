@@ -1,0 +1,7 @@
+{
+  "name": "ZonasApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
