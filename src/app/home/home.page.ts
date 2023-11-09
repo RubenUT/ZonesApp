@@ -9,6 +9,10 @@ import { Router } from '@angular/router';
 export class HomePage {
 
   constructor(private router: Router) {}
+
+  redirectToVallecito(){
+    this.router.navigateByUrl('/el-vallecito')
+  }
   redirectToElRey() {
     this.router.navigateByUrl('/el-rey');
   }

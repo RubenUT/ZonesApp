@@ -59,6 +59,10 @@ const routes: Routes = [
     path: 'dzibilchaltun',
     loadChildren: () => import('./dzibilchaltun/dzibilchaltun.module').then( m => m.DzibilchaltunPageModule)
   },
+  {
+    path: 'el-vallecito',
+    loadChildren: () => import('./baja-california-zones/el-vallecito/el-vallecito.module').then( m => m.ElVallecitoPageModule)
+  },
 ];
 
 @NgModule({

@@ -11,11 +11,11 @@ interface Marker {
 }
 
 @Component({
-  selector: 'app-el-rey',
-  templateUrl: './el-rey.page.html',
-  styleUrls: ['./el-rey.page.scss'],
+  selector: 'app-el-vallecito',
+  templateUrl: './el-vallecito.page.html',
+  styleUrls: ['./el-vallecito.page.scss'],
 })
-export class ElReyPage implements OnInit {
+export class ElVallecitoPage implements OnInit {
 
   map = null;
   constructor(private router: Router) {}
@@ -24,7 +24,7 @@ export class ElReyPage implements OnInit {
     // create a new map by passing HTMLElement
     const mapEle: HTMLElement = document.getElementById('map')!;
     // create LatLng object
-    const myLatLng = {lat: 21.059251, lng: -86.781508};
+    const myLatLng = {lat: 32.537251, lng: -116.09436};
     // create map
     this.map = new google.maps.Map(mapEle, {
       center: myLatLng,
@@ -35,10 +35,10 @@ export class ElReyPage implements OnInit {
       mapEle.classList.add('show-map');
       const marker = {
         position : {
-          lat: 21.059251,
-          lng: -86.781508
+          lat: 32.537251,
+          lng: -116.09436
         },
-        title : 'Zona arqueologica de El Rey'
+        title : 'Zona arqueologica de El Vallecito'
       }
       this.addMarker(marker);
     });
@@ -52,14 +52,11 @@ export class ElReyPage implements OnInit {
     });
   }
 
-  goToHome() {
-    this.router.navigateByUrl('/home');
-  }
-  redirectToElReyRA(){
-    window.open('assets/elrey-ar.html');
-  }
   ngOnInit() {
     this.loadMap();
   }
 
+  goToHome() {
+    this.router.navigateByUrl('/home');
+  }
 }
