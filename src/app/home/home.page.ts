@@ -14,7 +14,6 @@ export class HomePage {
   redirectToVallecito(){
     this.router.navigateByUrl('/el-vallecito')
   }
-
   //Campeche
   redirectToBalamku(){
     this.router.navigateByUrl('/balamku')
@@ -100,5 +99,12 @@ export class HomePage {
   }
   redirectToDzibilchaltun(){
     this.router.navigateByUrl('/dzibilchaltun');
+  }
+  redirectToHome(){
+    this.router.navigateByUrl('/home')
+  }
+
+  redirectToSearch(){
+    this.router.navigateByUrl('/search')
   }
 }

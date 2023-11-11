@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Barra de busqueda</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content >
+  <ion-searchbar animated placeholder="Busca la zona arqueologica" (ionInput)="buscar($event)" ></ion-searchbar>
+  <ion-list >
+    <ion-item *ngFor="let item of listaFiltrada" >
+      {{ item }}
+    </ion-item>
+  </ion-list>
+</ion-content>
