@@ -63,6 +63,70 @@ const routes: Routes = [
     path: 'el-vallecito',
     loadChildren: () => import('./baja-california-zones/el-vallecito/el-vallecito.module').then( m => m.ElVallecitoPageModule)
   },
+  {
+    path: 'balamku',
+    loadChildren: () => import('./campeche-zones/balamku/balamku.module').then( m => m.BalamkuPageModule)
+  },
+  {
+    path: 'becan',
+    loadChildren: () => import('./campeche-zones/becan/becan.module').then( m => m.BecanPageModule)
+  },
+  {
+    path: 'calakmul',
+    loadChildren: () => import('./campeche-zones/calakmul/calakmul.module').then( m => m.CalakmulPageModule)
+  },
+  {
+    path: 'chunhuhub',
+    loadChildren: () => import('./campeche-zones/chunhuhub/chunhuhub.module').then( m => m.ChunhuhubPageModule)
+  },
+  {
+    path: 'chicanna',
+    loadChildren: () => import('./campeche-zones/chicanna/chicanna.module').then( m => m.ChicannaPageModule)
+  },
+  {
+    path: 'dzibilnocac',
+    loadChildren: () => import('./campeche-zones/dzibilnocac/dzibilnocac.module').then( m => m.DzibilnocacPageModule)
+  },
+  {
+    path: 'edzna',
+    loadChildren: () => import('./campeche-zones/edzna/edzna.module').then( m => m.EdznaPageModule)
+  },
+  {
+    path: 'el-tigre',
+    loadChildren: () => import('./campeche-zones/el-tigre/el-tigre.module').then( m => m.ElTigrePageModule)
+  },
+  {
+    path: 'hochob',
+    loadChildren: () => import('./campeche-zones/hochob/hochob.module').then( m => m.HochobPageModule)
+  },
+  {
+    path: 'el-hormiguero',
+    loadChildren: () => import('./campeche-zones/el-hormiguero/el-hormiguero.module').then( m => m.ElHormigueroPageModule)
+  },
+  {
+    path: 'kanki',
+    loadChildren: () => import('./campeche-zones/kanki/kanki.module').then( m => m.KankiPageModule)
+  },
+  {
+    path: 'sanroxta',
+    loadChildren: () => import('./campeche-zones/sanroxta/sanroxta.module').then( m => m.SanroxtaPageModule)
+  },
+  {
+    path: 'tabasqueno',
+    loadChildren: () => import('./campeche-zones/tabasqueno/tabasqueno.module').then( m => m.TabasquenoPageModule)
+  },
+  {
+    path: 'tohcok',
+    loadChildren: () => import('./campeche-zones/tohcok/tohcok.module').then( m => m.TohcokPageModule)
+  },
+  {
+    path: 'xcalumkin',
+    loadChildren: () => import('./campeche-zones/xcalumkin/xcalumkin.module').then( m => m.XcalumkinPageModule)
+  },
+  {
+    path: 'xpuhil',
+    loadChildren: () => import('./campeche-zones/xpuhil/xpuhil.module').then( m => m.XpuhilPageModule)
+  },
 ];
 
 @NgModule({

@@ -10,9 +10,61 @@ export class HomePage {
 
   constructor(private router: Router) {}
 
+  //Baja California
   redirectToVallecito(){
     this.router.navigateByUrl('/el-vallecito')
   }
+
+  //Campeche
+  redirectToBalamku(){
+    this.router.navigateByUrl('/balamku')
+  }
+  redirectToBecan(){
+    this.router.navigateByUrl('/becan')
+  }
+  redirectToCalakmul(){
+    this.router.navigateByUrl('/calakmul')
+  }
+  redirectToChunhuhub(){
+    this.router.navigateByUrl('/chunhuhub')
+  } 
+  redirectToChicanna(){
+    this.router.navigateByUrl('/chicanna')
+  }
+  redirectToDzibilnocac(){
+    this.router.navigateByUrl('/dzibilnocac')
+  }
+  redirectToEdzna(){
+    this.router.navigateByUrl('/edzna')
+  }
+  redirectToElTigre(){
+    this.router.navigateByUrl('/el-tigre')
+  }
+  redirectToHochob(){
+    this.router.navigateByUrl('/hochob')
+  }
+  redirectToHormiguero(){
+    this.router.navigateByUrl('/el-hormiguero')
+  }
+  redirectToKanki(){
+    this.router.navigateByUrl('/kanki')
+  }
+  redirectToSanRoxta(){
+    this.router.navigateByUrl('/sanroxta')
+  }
+  redirectToTabasqueno(){
+    this.router.navigateByUrl('/tabasqueno')
+  }
+  redirectToTohcok(){
+    this.router.navigateByUrl('/tohcok')
+  }
+  redirectToXcalumkin(){
+    this.router.navigateByUrl('/xcalumkin')
+  }
+  redirectToXpuhil(){
+    this.router.navigateByUrl('/xpuhil')
+  }
+  //Quintana Roo
   redirectToElRey() {
     this.router.navigateByUrl('/el-rey');
   }
