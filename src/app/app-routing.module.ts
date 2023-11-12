@@ -127,6 +127,11 @@ const routes: Routes = [
     path: 'xpuhil',
     loadChildren: () => import('./campeche-zones/xpuhil/xpuhil.module').then( m => m.XpuhilPageModule)
   },
+  {
+    path: 'search',
+    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+  },
+
 ];
 
 @NgModule({

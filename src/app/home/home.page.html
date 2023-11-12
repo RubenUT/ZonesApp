@@ -1,4 +1,18 @@
 <ion-content>
+  <div class="example-content">
+  <ion-header>
+  <ion-toolbar>
+    <ion-title>Zonas arqueologicas de México</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+    <ion-tab-bar slot="top" class="Colordesearch">
+      <ion-tab-button (click)="redirectToSearch()" class="Colordesearch">
+        <ion-icon name="search"></ion-icon>
+        Search
+      </ion-tab-button>
+    </ion-tab-bar>
+ 
   <ion-card id="info-row">
     <h2>¿Que es una zona arqueologica?</h2>
     <div id="info-image">
@@ -155,4 +169,6 @@
     </ion-card-content>
   </ion-card>
 
+
+</div>
 </ion-content>
