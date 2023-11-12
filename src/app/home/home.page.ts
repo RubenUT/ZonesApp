@@ -8,62 +8,61 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
+  estados = [
+    {
+      nombre: 'Campeche',
+      zonas: [
+        { nombre: 'Zona arqueológica de Balamku', imagen: 'assets/img/campeche-img/bk_thn.jpg', ruta: '/balamku'},
+        { nombre: 'Zona arqueológica de Becan', imagen: 'assets/img/campeche-img/becan-tbn.jpg', ruta: '/becan'},
+        { nombre: 'Zona arqueológica de Calakmul', imagen: 'assets/img/campeche-img/calakmul-tbn.jpg', ruta: '/calakmul' },
+        { nombre: 'Zona arqueológica de Chunhuhub', imagen: 'assets/img/campeche-img/chhb-tbn.jpg', ruta: '/chunhuhub' },
+        { nombre: 'Zona arqueológica de Chicanná', imagen: 'assets/img/campeche-img/chicanna-tbn.jpg', ruta: '/chicanna' },
+        { nombre: 'Zona arqueológica de Dzibilnocac', imagen: 'assets/img/campeche-img/dzibilnocac-tbn.jpg', ruta: '/dzibilnocac' },
+        { nombre: 'Zona arqueológica de Edzna', imagen: 'assets/img/campeche-img/edzna-tbn.jpg', ruta: '/edzna' },
+        { nombre: 'Zona arqueológica de El Tigre', imagen: 'assets/img/campeche-img/el-tigre-tbn.jpg', ruta: '/el-tigre' },
+        { nombre: 'Zona arqueológica de Hochob', imagen: 'assets/img/campeche-img/hochob-tbn.jpg', ruta: '/hochob' },
+        { nombre: 'Zona arqueológica de El Hormiguero', imagen: 'assets/img/campeche-img/hormiguero-tbn.jpeg', ruta: '/el-hormiguero' },
+        { nombre: 'Zona arqueológica de Kankí', imagen: 'assets/img/campeche-img/kanki-tbn.jpg', ruta: '/kanki' },
+        { nombre: 'Zona arqueológica de Santa Rosa Xtampak', imagen: 'assets/img/campeche-img/sanmaxta-tbn.jpeg', ruta: '/sanroxta' },
+        { nombre: 'Zona arqueológica de Tabasqueño', imagen: 'assets/img/campeche-img/tabasqueno-tbn.jpeg', ruta: '/tabasqueno' },
+        { nombre: 'Zona arqueológica de Tohcok', imagen: 'assets/img/campeche-img/tohcok-tbn.jpg', ruta: '/tohcok' },
+        { nombre: 'Zona arqueológica de Xcalumkin', imagen: 'assets/img/campeche-img/xcalumkin-tbn.jpg', ruta: '/xcalumkin' },
+        { nombre: 'Zona arqueológica de Xpuhil', imagen: 'assets/img/campeche-img/xpuhil-tbn.jpeg', ruta: '/xpuhil' },
+      ],
+    },
+    // ... otros estados
+  ];
+
+  itemsPerPage = 4;
+  currentPage = 1;
+
+  get totalPages() {
+    return Math.ceil(this.estados.reduce((total, estado) => total + estado.zonas.length, 0) / this.itemsPerPage);
+  }
+
+  nextPage() {
+    if (this.currentPage < this.totalPages) {
+      this.currentPage++;
+    }
+  }
+
+  prevPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
+
   constructor(private router: Router) {}
+
+  redirectToZona(zona: any, estado: any) {
+    this.router.navigateByUrl(zona.ruta, { state: { zona: zona } });
+  }
 
   //Baja California
   redirectToVallecito(){
     this.router.navigateByUrl('/el-vallecito')
   }
 
-  //Campeche
-  redirectToBalamku(){
-    this.router.navigateByUrl('/balamku')
-  }
-  redirectToBecan(){
-    this.router.navigateByUrl('/becan')
-  }
-  redirectToCalakmul(){
-    this.router.navigateByUrl('/calakmul')
-  }
-  redirectToChunhuhub(){
-    this.router.navigateByUrl('/chunhuhub')
-  } 
-  redirectToChicanna(){
-    this.router.navigateByUrl('/chicanna')
-  }
-  redirectToDzibilnocac(){
-    this.router.navigateByUrl('/dzibilnocac')
-  }
-  redirectToEdzna(){
-    this.router.navigateByUrl('/edzna')
-  }
-  redirectToElTigre(){
-    this.router.navigateByUrl('/el-tigre')
-  }
-  redirectToHochob(){
-    this.router.navigateByUrl('/hochob')
-  }
-  redirectToHormiguero(){
-    this.router.navigateByUrl('/el-hormiguero')
-  }
-  redirectToKanki(){
-    this.router.navigateByUrl('/kanki')
-  }
-  redirectToSanRoxta(){
-    this.router.navigateByUrl('/sanroxta')
-  }
-  redirectToTabasqueno(){
-    this.router.navigateByUrl('/tabasqueno')
-  }
-  redirectToTohcok(){
-    this.router.navigateByUrl('/tohcok')
-  }
-  redirectToXcalumkin(){
-    this.router.navigateByUrl('/xcalumkin')
-  }
-  redirectToXpuhil(){
-    this.router.navigateByUrl('/xpuhil')
-  }
   //Quintana Roo
   redirectToElRey() {
     this.router.navigateByUrl('/el-rey');
