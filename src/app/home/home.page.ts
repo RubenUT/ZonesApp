@@ -29,27 +29,50 @@ export class HomePage {
         { nombre: 'Zona arqueológica de Xcalumkin', imagen: 'assets/img/campeche-img/xcalumkin-tbn.jpg', ruta: '/xcalumkin' },
         { nombre: 'Zona arqueológica de Xpuhil', imagen: 'assets/img/campeche-img/xpuhil-tbn.jpeg', ruta: '/xpuhil' },
       ],
+      currentPage: 1,
+      itemsPerPage: 4,
     },
-    // ... otros estados
+    {
+      nombre: 'Estado de México',
+      zonas: [
+        { nombre: 'Zona arqueológica de Ixtapaluca', imagen: 'assets/img/edomex-img/ixtapaluca-tbn.jpeg', ruta: '/ixtapaluca'},
+        { nombre: 'Zona arqueológica de Calixtlahuaca', imagen: 'assets/img/edomex-img/calixtlahuaca-tbn.jpeg', ruta: '/calixtlahuaca'},
+        { nombre: 'Zona arqueológica de Chimalhuacan', imagen: 'assets/img/edomex-img/chimalhuacan-tbn.jpg', ruta: '/chimalhuacan'},
+        { nombre: 'Zona arqueológica de El Conde', imagen: 'assets/img/edomex-img/el-conde-tbn.jpg', ruta: '/el-conde'},
+        { nombre: 'Zona arqueológica de Huamango', imagen: 'assets/img/edomex-img/huamango-tbn.jpg', ruta: '/huamango'},
+        { nombre: 'Zona arqueológica de Huexotla', imagen: 'assets/img/edomex-img/huexotla-tbn.jpeg', ruta: '/huexotla'},
+        { nombre: 'Zona arqueológica de Los Melones', imagen: 'assets/img/edomex-img/los-melones-tbn.jpg', ruta: '/los-melones'},
+        { nombre: 'Zona arqueológica de Los Reyes La Paz', imagen: 'assets/img/edomex-img/reyes-paz-tbn.jpeg', ruta: '/reyes-paz'},
+        { nombre: 'Zona arqueológica de Malinalco', imagen: 'assets/img/edomex-img/malinalco-tbn.jpg', ruta: '/malinalco'},
+        { nombre: 'Zona arqueológica de San Miguel Ixtapan', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Tenayuca I y II', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Teotenango', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Teotihuacan', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Tetzcotzingo', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Tlapacoya', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Tocuila', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Santa Cecila Acatitlán', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+        { nombre: 'Zona arqueológica de Ocoyoacac', imagen: 'assets/img/edomex-img/', ruta: '/home'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 4,
+    },
   ];
 
-  itemsPerPage = 4;
-  currentPage = 1;
-
-  get totalPages() {
-    return Math.ceil(this.estados.reduce((total, estado) => total + estado.zonas.length, 0) / this.itemsPerPage);
-  }
-
-  nextPage() {
-    if (this.currentPage < this.totalPages) {
-      this.currentPage++;
+  nextPage(estado: any) {
+    if (estado.currentPage < this.calculateTotalPages(estado)) {
+      estado.currentPage++;
     }
   }
 
-  prevPage() {
-    if (this.currentPage > 1) {
-      this.currentPage--;
+  prevPage(estado: any) {
+    if (estado.currentPage > 1) {
+      estado.currentPage--;
     }
+  }
+
+  calculateTotalPages(estado: any): number {
+    return Math.ceil(estado.zonas.length / estado.itemsPerPage);
   }
 
   constructor(private router: Router) {}

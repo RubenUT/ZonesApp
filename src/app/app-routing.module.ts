@@ -130,7 +130,43 @@ const routes: Routes = [
   {
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
+  },  {
+    path: 'ixtapaluca',
+    loadChildren: () => import('./edomex-zones/ixtapaluca/ixtapaluca.module').then( m => m.IxtapalucaPageModule)
   },
+  {
+    path: 'calixtlahuaca',
+    loadChildren: () => import('./edomex-zones/calixtlahuaca/calixtlahuaca.module').then( m => m.CalixtlahuacaPageModule)
+  },
+  {
+    path: 'chimalhuacan',
+    loadChildren: () => import('./edomex-zones/chimalhuacan/chimalhuacan.module').then( m => m.ChimalhuacanPageModule)
+  },
+  {
+    path: 'el-conde',
+    loadChildren: () => import('./edomex-zones/el-conde/el-conde.module').then( m => m.ElCondePageModule)
+  },
+  {
+    path: 'huamango',
+    loadChildren: () => import('./edomex-zones/huamango/huamango.module').then( m => m.HuamangoPageModule)
+  },
+  {
+    path: 'huexotla',
+    loadChildren: () => import('./edomex-zones/huexotla/huexotla.module').then( m => m.HuexotlaPageModule)
+  },
+  {
+    path: 'los-melones',
+    loadChildren: () => import('./edomex-zones/los-melones/los-melones.module').then( m => m.LosMelonesPageModule)
+  },
+  {
+    path: 'reyes-paz',
+    loadChildren: () => import('./edomex-zones/reyes-paz/reyes-paz.module').then( m => m.ReyesPazPageModule)
+  },
+  {
+    path: 'malinalco',
+    loadChildren: () => import('./edomex-zones/malinalco/malinalco.module').then( m => m.MalinalcoPageModule)
+  },
+
 
 ];
 

@@ -49,7 +49,7 @@
     </ion-card-header>
     <ion-card-content>
       <ion-list>
-        <ion-item *ngFor="let zona of estado.zonas | slice: (currentPage-1)*itemsPerPage : currentPage*itemsPerPage"
+        <ion-item *ngFor="let zona of estado.zonas | slice: (estado.currentPage-1)*estado.itemsPerPage : estado.currentPage*estado.itemsPerPage"
           (click)="redirectToZona(zona, estado)">
           <ion-avatar slot="start">
             <img [src]="zona.imagen" alt="{{ zona.nombre }}" />
@@ -58,12 +58,11 @@
         </ion-item>
       </ion-list>
       <ion-buttons class="zone-nav-buttons">
-        <ion-button shape="round" (click)="prevPage()" [disabled]="currentPage === 1">Anterior</ion-button>
-        <ion-button shape="round" (click)="nextPage()" [disabled]="currentPage === totalPages">Siguiente</ion-button>
+        <ion-button shape="round" (click)="prevPage(estado)" [disabled]="estado.currentPage === 1">Anterior</ion-button>
+        <ion-button shape="round" (click)="nextPage(estado)" [disabled]="estado.currentPage === calculateTotalPages(estado)">Siguiente</ion-button>
       </ion-buttons>
     </ion-card-content>
   </ion-card>
-
 
   <ion-card>
     <ion-card-header>
