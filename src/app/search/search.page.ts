@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -6,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.page.scss'],
 })
 export class SearchPage implements OnInit {
-
+  
   lista!: string[];
   listaFiltrada!: string[];
 
-  constructor() { 
+  constructor(private router: Router) { 
     this.inicializar();
     this.listaFiltrada = [...this.lista];
   }
@@ -214,6 +215,10 @@ export class SearchPage implements OnInit {
     } else {
       this.listaFiltrada = [...this.lista];
     }
+  }
+
+  goToHome() {
+    this.router.navigateByUrl('/home');
   }
 
 }
