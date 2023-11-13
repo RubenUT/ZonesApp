@@ -10,7 +10,7 @@
 <ion-content >
   <ion-searchbar animated placeholder="Busca la zona arqueologica" (ionInput)="buscar($event)" ></ion-searchbar>
   <ion-list >
-    <ion-item *ngFor="let item of listaFiltrada" >
+    <ion-item *ngFor="let item of listaFiltrada" (click)="redirigirAPagina(item)">
       {{ item }}
     </ion-item>
   </ion-list>
