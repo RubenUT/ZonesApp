@@ -25,23 +25,6 @@
     </div>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Baja California</ion-card-title>
-      <ion-card-subtitle>Descubre zonas arqueologicas en...</ion-card-subtitle>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-        <ion-item (click)="redirectToVallecito()">
-          <ion-thumbnail slot="start">
-            <img alt="El Vallecito" src="assets\img\baja-california-img\bc_vallecito.jpg" />
-          </ion-thumbnail>
-          <ion-label>Zona arqueologica de El Vallecito</ion-label>
-        </ion-item>
-      </ion-list>
-    </ion-card-content>
-  </ion-card>
-
   <ion-card *ngFor="let estado of estados">
     <ion-card-header>
       <ion-card-title>{{ estado.nombre }}</ion-card-title>
