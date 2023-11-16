@@ -206,6 +206,38 @@ const routes: Routes = [
     path: 'vedelape',
     loadChildren: () => import('./veracruz-zones/vedelape/vedelape.module').then( m => m.VedelapePageModule)
   },
+  {
+    path: 'olintepec',
+    loadChildren: () => import('./morelos-zones/olintepec/olintepec.module').then( m => m.OlintepecPageModule)
+  },
+  {
+    path: 'chalcatzingo',
+    loadChildren: () => import('./morelos-zones/chalcatzingo/chalcatzingo.module').then( m => m.ChalcatzingoPageModule)
+  },
+  {
+    path: 'coatetelco',
+    loadChildren: () => import('./morelos-zones/coatetelco/coatetelco.module').then( m => m.CoatetelcoPageModule)
+  },
+  {
+    path: 'las-pilas',
+    loadChildren: () => import('./morelos-zones/las-pilas/las-pilas.module').then( m => m.LasPilasPageModule)
+  },
+  {
+    path: 'teopanzolco',
+    loadChildren: () => import('./morelos-zones/teopanzolco/teopanzolco.module').then( m => m.TeopanzolcoPageModule)
+  },
+  {
+    path: 'tepozteco',
+    loadChildren: () => import('./morelos-zones/tepozteco/tepozteco.module').then( m => m.TepoztecoPageModule)
+  },
+  {
+    path: 'xochicalco',
+    loadChildren: () => import('./morelos-zones/xochicalco/xochicalco.module').then( m => m.XochicalcoPageModule)
+  },
+  {
+    path: 'yautepec',
+    loadChildren: () => import('./morelos-zones/yautepec/yautepec.module').then( m => m.YautepecPageModule)
+  },
 
 
 ];

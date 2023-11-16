@@ -66,6 +66,21 @@ export class HomePage {
       itemsPerPage: 4,
     },
     {
+      nombre: 'Morelos',
+      zonas: [
+        { nombre: 'Zona Arqueologica de Olintepec', imagen: 'assets/img/morelos-img/olintepec-tbn.jpeg', ruta: '/olintepec'},
+        { nombre: 'Zona Arqueologica de Chalcatzingo', imagen: 'assets/img/morelos-img/chalcatzingo-tbn.jpg', ruta: '/chalcatzingo'},
+        { nombre: 'Zona Arqueologica de Coatetelco', imagen: 'assets/img/morelos-img/coatetelco-tbn.jpg', ruta: '/coatetelco'},
+        { nombre: 'Zona Arqueologica Las Pilas', imagen: 'assets/img/morelos-img/pilas-tbn.jpeg', ruta: '/las-pilas'},
+        { nombre: 'Zona Arqueologica de Teopanzolco', imagen: 'assets/img/morelos-img/teopanzolco-tbn.jpg', ruta: '/teopanzolco'},
+        { nombre: 'Zona Arqueologica de Tepozteco', imagen: 'assets/img/morelos-img/tepozteco-tbn.jpg', ruta: '/tepozteco'},
+        { nombre: 'Zona Arqueologica de Xochicalco', imagen: 'assets/img/morelos-img/xochicalco-tbn.jpg', ruta: '/xochicalco'},
+        { nombre: 'Zona Arqueologica de Yautepec', imagen: 'assets/img/morelos-img/yautepec-tbn.jpeg', ruta: '/yautepec'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 4,
+    },
+    {
       nombre: 'Veracruz',
       zonas: [
         { nombre: 'Zona Arqueologica Castillo de Teayo', imagen: 'assets/img/veracruz-img/casteayo-tbn.jpeg', ruta: '/casteayo'},
