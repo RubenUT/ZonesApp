@@ -10,6 +10,14 @@ export class HomePage {
 
   estados = [
     {
+      nombre: 'Baja California',
+      zonas: [
+        { nombre: 'Zona arqueológica de El Vallecito', imagen: 'assets/img/baja-california-img/bc_vallecito.jpg', ruta: '/el-vallecito'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 4,
+    },
+    {
       nombre: 'Campeche',
       zonas: [
         { nombre: 'Zona arqueológica de Balamku', imagen: 'assets/img/campeche-img/bk_thn.jpg', ruta: '/balamku'},
@@ -57,6 +65,38 @@ export class HomePage {
       currentPage: 1,
       itemsPerPage: 4,
     },
+    {
+      nombre: 'Morelos',
+      zonas: [
+        { nombre: 'Zona Arqueologica de Olintepec', imagen: 'assets/img/morelos-img/olintepec-tbn.jpeg', ruta: '/olintepec'},
+        { nombre: 'Zona Arqueologica de Chalcatzingo', imagen: 'assets/img/morelos-img/chalcatzingo-tbn.jpg', ruta: '/chalcatzingo'},
+        { nombre: 'Zona Arqueologica de Coatetelco', imagen: 'assets/img/morelos-img/coatetelco-tbn.jpg', ruta: '/coatetelco'},
+        { nombre: 'Zona Arqueologica Las Pilas', imagen: 'assets/img/morelos-img/pilas-tbn.jpeg', ruta: '/las-pilas'},
+        { nombre: 'Zona Arqueologica de Teopanzolco', imagen: 'assets/img/morelos-img/teopanzolco-tbn.jpg', ruta: '/teopanzolco'},
+        { nombre: 'Zona Arqueologica de Tepozteco', imagen: 'assets/img/morelos-img/tepozteco-tbn.jpg', ruta: '/tepozteco'},
+        { nombre: 'Zona Arqueologica de Xochicalco', imagen: 'assets/img/morelos-img/xochicalco-tbn.jpg', ruta: '/xochicalco'},
+        { nombre: 'Zona Arqueologica de Yautepec', imagen: 'assets/img/morelos-img/yautepec-tbn.jpeg', ruta: '/yautepec'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 4,
+    },
+    {
+      nombre: 'Veracruz',
+      zonas: [
+        { nombre: 'Zona Arqueologica Castillo de Teayo', imagen: 'assets/img/veracruz-img/casteayo-tbn.jpeg', ruta: '/casteayo'},
+        { nombre: 'Zona arqueológica de Cempoala', imagen: 'assets/img/veracruz-img/cempoala-tbn.jpg', ruta: '/cempoala'},
+        { nombre: 'Zona arqueológica el Cuajilote', imagen: 'assets/img/veracruz-img/cuajilote-tbn.jpeg', ruta: '/cuajilote'},
+        { nombre: 'Zona arqueológica Cuyuxquihui', imagen: 'assets/img/veracruz-img/cuyuxquihui-tbn.jpeg', ruta: '/cuyuxquihui'},
+        { nombre: 'Zona arqueológica El Tajín', imagen: 'assets/img/veracruz-img/tajin-tbn.JPG', ruta: '/el-tajin'},
+        { nombre: 'Zona arqueológica Las Higueras', imagen: 'assets/img/veracruz-img/las-higueras-tbn.jpg', ruta: '/las-higueras'},
+        { nombre: 'Zona arqueológica Quiahuiztlán', imagen: 'assets/img/veracruz-img/quianhuiztlan-tbn.png', ruta: '/quianhuiztlan'},
+        { nombre: 'Zona arqueológica San Lorenzo Tenochtitlan', imagen: 'assets/img/veracruz-img/sanloten-tbn.jpg', ruta: '/sanloten'},
+        { nombre: 'Zona arqueológica Tres Zapotes', imagen: 'assets/img/veracruz-img/tres-zapotes-tbn.jpg', ruta: '/tres-zapotes'},
+        { nombre: 'Zona arqueológica Vega de la Peña', imagen: 'assets/img/veracruz-img/vedelape-tbn.jpeg', ruta: '/vedelape'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 5,
+    },
   ];
 
   nextPage(estado: any) {
@@ -81,11 +121,6 @@ export class HomePage {
     this.router.navigateByUrl(zona.ruta, { state: { zona: zona } });
   }
 
-  //Baja California
-  redirectToVallecito(){
-    this.router.navigateByUrl('/el-vallecito')
-  }
-  
   //Quintana Roo
   redirectToElRey() {
     this.router.navigateByUrl('/el-rey');

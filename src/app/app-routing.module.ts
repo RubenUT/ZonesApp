@@ -130,7 +130,8 @@ const routes: Routes = [
   {
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
-  },  {
+  },
+  {
     path: 'ixtapaluca',
     loadChildren: () => import('./edomex-zones/ixtapaluca/ixtapaluca.module').then( m => m.IxtapalucaPageModule)
   },
@@ -165,6 +166,77 @@ const routes: Routes = [
   {
     path: 'malinalco',
     loadChildren: () => import('./edomex-zones/malinalco/malinalco.module').then( m => m.MalinalcoPageModule)
+  },
+  {
+    path: 'casteayo',
+    loadChildren: () => import('./veracruz-zones/casteayo/casteayo.module').then( m => m.CasteayoPageModule)
+  },
+  {
+    path: 'cempoala',
+    loadChildren: () => import('./veracruz-zones/cempoala/cempoala.module').then( m => m.CempoalaPageModule)
+  },
+  {
+    path: 'cuajilote',
+    loadChildren: () => import('./veracruz-zones/cuajilote/cuajilote.module').then( m => m.CuajilotePageModule)
+  },
+  {
+    path: 'cuyuxquihui',
+    loadChildren: () => import('./veracruz-zones/cuyuxquihui/cuyuxquihui.module').then( m => m.CuyuxquihuiPageModule)
+  },
+  {
+    path: 'el-tajin',
+    loadChildren: () => import('./veracruz-zones/el-tajin/el-tajin.module').then( m => m.ElTajinPageModule)
+  },
+  {
+    path: 'las-higueras',
+    loadChildren: () => import('./veracruz-zones/las-higueras/las-higueras.module').then( m => m.LasHiguerasPageModule)
+  },
+  {
+    path: 'quianhuiztlan',
+    loadChildren: () => import('./veracruz-zones/quianhuiztlan/quianhuiztlan.module').then( m => m.QuianhuiztlanPageModule)
+  },
+  {
+    path: 'sanloten',
+    loadChildren: () => import('./veracruz-zones/sanloten/sanloten.module').then( m => m.SanlotenPageModule)
+  },  {
+    path: 'tres-zapotes',
+    loadChildren: () => import('./veracruz-zones/tres-zapotes/tres-zapotes.module').then( m => m.TresZapotesPageModule)
+  },
+  {
+    path: 'vedelape',
+    loadChildren: () => import('./veracruz-zones/vedelape/vedelape.module').then( m => m.VedelapePageModule)
+  },
+  {
+    path: 'olintepec',
+    loadChildren: () => import('./morelos-zones/olintepec/olintepec.module').then( m => m.OlintepecPageModule)
+  },
+  {
+    path: 'chalcatzingo',
+    loadChildren: () => import('./morelos-zones/chalcatzingo/chalcatzingo.module').then( m => m.ChalcatzingoPageModule)
+  },
+  {
+    path: 'coatetelco',
+    loadChildren: () => import('./morelos-zones/coatetelco/coatetelco.module').then( m => m.CoatetelcoPageModule)
+  },
+  {
+    path: 'las-pilas',
+    loadChildren: () => import('./morelos-zones/las-pilas/las-pilas.module').then( m => m.LasPilasPageModule)
+  },
+  {
+    path: 'teopanzolco',
+    loadChildren: () => import('./morelos-zones/teopanzolco/teopanzolco.module').then( m => m.TeopanzolcoPageModule)
+  },
+  {
+    path: 'tepozteco',
+    loadChildren: () => import('./morelos-zones/tepozteco/tepozteco.module').then( m => m.TepoztecoPageModule)
+  },
+  {
+    path: 'xochicalco',
+    loadChildren: () => import('./morelos-zones/xochicalco/xochicalco.module').then( m => m.XochicalcoPageModule)
+  },
+  {
+    path: 'yautepec',
+    loadChildren: () => import('./morelos-zones/yautepec/yautepec.module').then( m => m.YautepecPageModule)
   },
   {
     path: 'san-miguel-ixtapan',
