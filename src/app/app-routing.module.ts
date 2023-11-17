@@ -166,6 +166,42 @@ const routes: Routes = [
     path: 'malinalco',
     loadChildren: () => import('./edomex-zones/malinalco/malinalco.module').then( m => m.MalinalcoPageModule)
   },
+  {
+    path: 'san-miguel-ixtapan',
+    loadChildren: () => import('./edomex-zones/san-miguel-ixtapan/san-miguel-ixtapan.module').then( m => m.SanMiguelIxtapanPageModule)
+  },
+  {
+    path: 'tenayuca-l-ll',
+    loadChildren: () => import('./edomex-zones/tenayuca-l-ll/tenayuca-l-ll.module').then( m => m.TenayucaLLlPageModule)
+  },
+  {
+    path: 'teotenango',
+    loadChildren: () => import('./edomex-zones/teotenango/teotenango.module').then( m => m.TeotenangoPageModule)
+  },
+  {
+    path: 'teotihuacan',
+    loadChildren: () => import('./edomex-zones/teotihuacan/teotihuacan.module').then( m => m.TeotihuacanPageModule)
+  },
+  {
+    path: 'tetzcotzingo',
+    loadChildren: () => import('./edomex-zones/tetzcotzingo/tetzcotzingo.module').then( m => m.TetzcotzingoPageModule)
+  },
+  {
+    path: 'tlapacoya',
+    loadChildren: () => import('./edomex-zones/tlapacoya/tlapacoya.module').then( m => m.TlapacoyaPageModule)
+  },
+  {
+    path: 'tocuila',
+    loadChildren: () => import('./edomex-zones/tocuila/tocuila.module').then( m => m.TocuilaPageModule)
+  },
+  {
+    path: 'santa-cecila-acatitlan',
+    loadChildren: () => import('./edomex-zones/santa-cecila-acatitlan/santa-cecila-acatitlan.module').then( m => m.SantaCecilaAcatitlanPageModule)
+  },
+  {
+    path: 'ocoyoacac',
+    loadChildren: () => import('./edomex-zones/ocoyoacac/ocoyoacac.module').then( m => m.OcoyoacacPageModule)
+  },
 
 
 ];
