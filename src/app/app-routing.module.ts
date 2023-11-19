@@ -198,7 +198,8 @@ const routes: Routes = [
   {
     path: 'sanloten',
     loadChildren: () => import('./veracruz-zones/sanloten/sanloten.module').then( m => m.SanlotenPageModule)
-  },  {
+  },
+  {
     path: 'tres-zapotes',
     loadChildren: () => import('./veracruz-zones/tres-zapotes/tres-zapotes.module').then( m => m.TresZapotesPageModule)
   },
@@ -273,6 +274,45 @@ const routes: Routes = [
   {
     path: 'ocoyoacac',
     loadChildren: () => import('./edomex-zones/ocoyoacac/ocoyoacac.module').then( m => m.OcoyoacacPageModule)
+  },
+  {
+    path: 'querende',
+    loadChildren: () => import('./guerrero-zones/querende/querende.module').then( m => m.QuerendePageModule)
+  },
+  {
+    path: 'soma',
+    loadChildren: () => import('./guerrero-zones/soma/soma.module').then( m => m.SomaPageModule)
+  },
+  {
+    path: 'huamuxtitlan',
+    loadChildren: () => import('./guerrero-zones/huamuxtitlan/huamuxtitlan.module').then( m => m.HuamuxtitlanPageModule)
+  },
+  {
+    path: 'ixcateopan',
+    loadChildren: () => import('./guerrero-zones/ixcateopan/ixcateopan.module').then( m => m.IxcateopanPageModule)
+  },
+  {
+    path: 'xochipala',
+    loadChildren: () => import('./guerrero-zones/xochipala/xochipala.module').then( m => m.XochipalaPageModule)
+  },
+  {
+    path: 'la-sabana',
+    loadChildren: () => import('./guerrero-zones/la-sabana/la-sabana.module').then( m => m.LaSabanaPageModule)
+  },  {
+    path: 'los-tepoltzis',
+    loadChildren: () => import('./guerrero-zones/los-tepoltzis/los-tepoltzis.module').then( m => m.LosTepoltzisPageModule)
+  },
+  {
+    path: 'palma-sola',
+    loadChildren: () => import('./guerrero-zones/palma-sola/palma-sola.module').then( m => m.PalmaSolaPageModule)
+  },
+  {
+    path: 'tehuacalco',
+    loadChildren: () => import('./guerrero-zones/tehuacalco/tehuacalco.module').then( m => m.TehuacalcoPageModule)
+  },
+  {
+    path: 'teopantecuanitlan',
+    loadChildren: () => import('./guerrero-zones/teopantecuanitlan/teopantecuanitlan.module').then( m => m.TeopantecuanitlanPageModule)
   },
 
 

@@ -66,6 +66,23 @@ export class HomePage {
       itemsPerPage: 4,
     },
     {
+      nombre: 'Guerrero',
+      zonas: [
+        { nombre: 'Zona arqueológica de Querende', imagen: 'assets/img/guerrero-img/querende-tbn.jpg', ruta: '/querende'},
+        { nombre: 'Zona arqueológica Soledad de Maciel', imagen: 'assets/img/guerrero-img/soma-tbn.jpeg', ruta: '/soma'},
+        { nombre: 'Zona arqueológica Huamuxtitlán', imagen: 'assets/img/guerrero-img/huamuxtitlan-tbn.jpg', ruta: '/huamuxtitlan'},
+        { nombre: 'Zona arqueológica Ixcateopan', imagen: 'assets/img/guerrero-img/ixcateopan-tbn.jpg', ruta: '/ixcateopan'},
+        { nombre: 'Zona arqueológica Xochipala', imagen: 'assets/img/guerrero-img/xochipala-tbn.jpg', ruta: '/xochipala'},
+        { nombre: 'Zona arqueológica La Sabana', imagen: 'assets/img/guerrero-img/sabana-tbn.jpeg', ruta: '/la-sabana'},
+        { nombre: 'Zona arqueológica Los Tepoltzis', imagen: 'assets/img/guerrero-img/tepoltzis-tbn.jpg', ruta: '/los-tepoltzis'},
+        { nombre: 'Zona arqueológica Palma Sola', imagen: 'assets/img/guerrero-img/palma-sola-tbn.jpeg', ruta: '/palma-sola'},
+        { nombre: 'Zona arqueológica de Tehuacalco', imagen: 'assets/img/guerrero-img/tehuacalco-tbn.jpg', ruta: '/tehuacalco'},
+        { nombre: 'Zona arqueológica de Teopantecuanitlán', imagen: 'assets/img/guerrero-img/teopantecuanitlan-tbn.jpeg', ruta: '/teopantecuanitlan'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 5,
+    },
+    {
       nombre: 'Morelos',
       zonas: [
         { nombre: 'Zona Arqueologica de Olintepec', imagen: 'assets/img/morelos-img/olintepec-tbn.jpeg', ruta: '/olintepec'},
