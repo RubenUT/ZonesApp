@@ -98,6 +98,18 @@ export class HomePage {
       itemsPerPage: 4,
     },
     {
+      nombre: 'Tabasco',
+      zonas: [
+        { nombre: 'Zona Arqueologica de Comalcalco', imagen: 'assets/img/tabasco-img/comalcalco-tbn.png', ruta: '/comalcalco'},
+        { nombre: 'Zona Arqueologica La Venta', imagen: 'assets/img/tabasco-img/la-venta-tbn.png', ruta: '/la-venta'},
+        { nombre: 'Zona Arqueologica Malpasito', imagen: 'assets/img/tabasco-img/malpasito-tbn.png', ruta: '/malpasito'},
+        { nombre: 'Zona Arqueologica Moral-Reforma', imagen: 'assets/img/tabasco-img/moral-reforma-tbn.png', ruta: '/moral-reforma'},
+        { nombre: 'Zona Arqueologica Pomoná', imagen: 'assets/img/tabasco-img/pomona-tbn.png', ruta: '/pomona'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 5,
+    },
+    {
       nombre: 'Veracruz',
       zonas: [
         { nombre: 'Zona Arqueologica Castillo de Teayo', imagen: 'assets/img/veracruz-img/casteayo-tbn.jpeg', ruta: '/casteayo'},

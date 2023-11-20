@@ -314,6 +314,26 @@ const routes: Routes = [
     path: 'teopantecuanitlan',
     loadChildren: () => import('./guerrero-zones/teopantecuanitlan/teopantecuanitlan.module').then( m => m.TeopantecuanitlanPageModule)
   },
+  {
+    path: 'comalcalco',
+    loadChildren: () => import('./tabasco-zones/comalcalco/comalcalco.module').then( m => m.ComalcalcoPageModule)
+  },
+  {
+    path: 'la-venta',
+    loadChildren: () => import('./tabasco-zones/la-venta/la-venta.module').then( m => m.LaVentaPageModule)
+  },
+  {
+    path: 'malpasito',
+    loadChildren: () => import('./tabasco-zones/malpasito/malpasito.module').then( m => m.MalpasitoPageModule)
+  },
+  {
+    path: 'moral-reforma',
+    loadChildren: () => import('./tabasco-zones/moral-reforma/moral-reforma.module').then( m => m.MoralReformaPageModule)
+  },
+  {
+    path: 'pomona',
+    loadChildren: () => import('./tabasco-zones/pomona/pomona.module').then( m => m.PomonaPageModule)
+  },
 
 
 ];
