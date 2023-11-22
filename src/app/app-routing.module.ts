@@ -334,6 +334,22 @@ const routes: Routes = [
     path: 'pomona',
     loadChildren: () => import('./tabasco-zones/pomona/pomona.module').then( m => m.PomonaPageModule)
   },
+  {
+    path: 'huapalcalco',
+    loadChildren: () => import('./hidalgo-zones/huapalcalco/huapalcalco.module').then( m => m.HuapalcalcoPageModule)
+  },
+  {
+    path: 'pahnu',
+    loadChildren: () => import('./hidalgo-zones/pahnu/pahnu.module').then( m => m.PahnuPageModule)
+  },
+  {
+    path: 'tula',
+    loadChildren: () => import('./hidalgo-zones/tula/tula.module').then( m => m.TulaPageModule)
+  },
+  {
+    path: 'xihuingo',
+    loadChildren: () => import('./hidalgo-zones/xihuingo/xihuingo.module').then( m => m.XihuingoPageModule)
+  },
 
 
 ];

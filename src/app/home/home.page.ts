@@ -77,10 +77,21 @@ export class HomePage {
         { nombre: 'Zona arqueológica Los Tepoltzis', imagen: 'assets/img/guerrero-img/tepoltzis-tbn.jpg', ruta: '/los-tepoltzis'},
         { nombre: 'Zona arqueológica Palma Sola', imagen: 'assets/img/guerrero-img/palma-sola-tbn.jpeg', ruta: '/palma-sola'},
         { nombre: 'Zona arqueológica de Tehuacalco', imagen: 'assets/img/guerrero-img/tehuacalco-tbn.jpg', ruta: '/tehuacalco'},
-        { nombre: 'Zona arqueológica de Teopantecuanitlán', imagen: 'assets/img/guerrero-img/teopantecuanitlan-tbn.jpeg', ruta: '/teopantecuanitlan'},
+        { nombre: 'Zona arqueológica de Teopantecuanitlán', imagen: 'assets/img/guerrero-img/teopantecuanitlan-tbn.jpeg', ruta: '/teopantecuanitlan'}
       ],
       currentPage: 1,
       itemsPerPage: 5,
+    },
+    {
+      nombre: 'Hidalgo',
+      zonas: [
+        { nombre: 'Zona Arqueologica de Huapalcalco', imagen: 'assets/img/hidalgo-img/huapalcalco-tbn.png', ruta: '/huapalcalco'},
+        { nombre: 'Zona Arqueologica de Pahñú', imagen: 'assets/img/hidalgo-img/panhu-tbn.png', ruta: '/pahnu'},
+        { nombre: 'Zona Arqueologica de Tula', imagen: 'assets/img/hidalgo-img/tula-tbn.png', ruta: '/tula'},
+        { nombre: 'Zona Arqueologica de Xihuingo', imagen: 'assets/img/hidalgo-img/xihuingo-tbn.png', ruta: '/xihuingo'}
+      ],
+      currentPage: 1,
+      itemsPerPage: 4,
     },
     {
       nombre: 'Morelos',
