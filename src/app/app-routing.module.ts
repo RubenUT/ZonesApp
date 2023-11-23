@@ -13,27 +13,27 @@ const routes: Routes = [
   },
   {
     path: 'el-rey',
-    loadChildren: () => import('./el-rey/el-rey.module').then( m => m.ElReyPageModule)
+    loadChildren: () => import('./qroo-zones/el-rey/el-rey.module').then( m => m.ElReyPageModule)
   },
   {
     path: 'el-meco',
-    loadChildren: () => import('./el-meco/el-meco.module').then( m => m.ElMecoPageModule)
+    loadChildren: () => import('./qroo-zones/el-meco/el-meco.module').then( m => m.ElMecoPageModule)
   },
   {
     path: 'san-gervasio',
-    loadChildren: () => import('./san-gervasio/san-gervasio.module').then( m => m.SanGervasioPageModule)
+    loadChildren: () => import('./qroo-zones/san-gervasio/san-gervasio.module').then( m => m.SanGervasioPageModule)
   },
   {
     path: 'xelha',
-    loadChildren: () => import('./xelha/xelha.module').then( m => m.XelhaPageModule)
+    loadChildren: () => import('./qroo-zones/xelha/xelha.module').then( m => m.XelhaPageModule)
   },
   {
     path: 'tulum',
-    loadChildren: () => import('./tulum/tulum.module').then( m => m.TulumPageModule)
+    loadChildren: () => import('./qroo-zones/tulum/tulum.module').then( m => m.TulumPageModule)
   },
   {
     path: 'coba',
-    loadChildren: () => import('./coba/coba.module').then( m => m.CobaPageModule)
+    loadChildren: () => import('./qroo-zones/coba/coba.module').then( m => m.CobaPageModule)
   },
   {
     path: 'ek-balam',
@@ -298,7 +298,8 @@ const routes: Routes = [
   {
     path: 'la-sabana',
     loadChildren: () => import('./guerrero-zones/la-sabana/la-sabana.module').then( m => m.LaSabanaPageModule)
-  },  {
+  },
+  {
     path: 'los-tepoltzis',
     loadChildren: () => import('./guerrero-zones/los-tepoltzis/los-tepoltzis.module').then( m => m.LosTepoltzisPageModule)
   },

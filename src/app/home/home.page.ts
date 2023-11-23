@@ -137,6 +137,19 @@ export class HomePage {
       currentPage: 1,
       itemsPerPage: 5,
     },
+    {
+      nombre: 'Quintana Roo',
+      zonas: [
+        { nombre: 'Zona Arqueologica El Rey', imagen: 'assets/img/qroo-img/el-rey-tbn.png', ruta: '/el-rey'},
+        { nombre: 'Zona arqueológica El Meco', imagen: 'assets/img/qroo-img/el-meco-tbn.png', ruta: '/el-meco'},
+        { nombre: 'Zona arqueológica San Gervasio', imagen: 'assets/img/qroo-img/san-gervasio-tbn.png', ruta: '/san-gervasio'},
+        { nombre: 'Zona arqueológica Xel-Há', imagen: 'assets/img/qroo-img/xelha-tbn.png', ruta: '/xelha'},
+        { nombre: 'Zona arqueológica de Coba', imagen: 'assets/img/qroo-img/coba-tbn.jpg', ruta: '/coba'},
+        { nombre: 'Zona arqueológica de Tulum', imagen: 'assets/img/qroo-img/tulum-tbn.jpg', ruta: '/tulum'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 6,
+    },
   ];
 
   nextPage(estado: any) {
@@ -161,25 +174,6 @@ export class HomePage {
     this.router.navigateByUrl(zona.ruta, { state: { zona: zona } });
   }
 
-  //Quintana Roo
-  redirectToElRey() {
-    this.router.navigateByUrl('/el-rey');
-  }
-  redirectToElMeco(){
-    this.router.navigateByUrl('/el-meco');
-  }
-  redirectToSanGervasio(){
-    this.router.navigateByUrl('/san-gervasio');
-  }
-  redirectToXelHa(){
-    this.router.navigateByUrl('/xelha');
-  }
-  redirectToCoba(){
-    this.router.navigateByUrl('/coba');
-  }
-  redirectToTulum(){
-    this.router.navigateByUrl('/tulum');
-  }
   redirectToEkBalam(){
     this.router.navigateByUrl('/ek-balam');
   }

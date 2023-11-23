@@ -11,21 +11,18 @@ interface Marker {
 }
 
 @Component({
-  selector: 'app-el-rey',
-  templateUrl: './el-rey.page.html',
-  styleUrls: ['./el-rey.page.scss'],
+  selector: 'app-san-gervasio',
+  templateUrl: './san-gervasio.page.html',
+  styleUrls: ['./san-gervasio.page.scss'],
 })
-export class ElReyPage implements OnInit {
+export class SanGervasioPage implements OnInit {
 
   map = null;
   constructor(private router: Router) {}
 
   loadMap() {
-    // create a new map by passing HTMLElement
     const mapEle: HTMLElement = document.getElementById('map')!;
-    // create LatLng object
-    const myLatLng = {lat: 21.059251, lng: -86.781508};
-    // create map
+    const myLatLng = {lat: 20.500117476205574, lng: -86.84633387380163};
     this.map = new google.maps.Map(mapEle, {
       center: myLatLng,
       zoom: 12
@@ -35,10 +32,10 @@ export class ElReyPage implements OnInit {
       mapEle.classList.add('show-map');
       const marker = {
         position : {
-          lat: 21.059251,
-          lng: -86.781508
+          lat: 20.500117476205574,
+          lng: -86.84633387380163
         },
-        title : 'Zona arqueologica de El Rey'
+        title : 'Zona arqueologica de San Gervasio'
       }
       this.addMarker(marker);
     });
@@ -52,14 +49,11 @@ export class ElReyPage implements OnInit {
     });
   }
 
-  goToHome() {
-    this.router.navigateByUrl('/home');
-  }
-  redirectToElReyRA(){
-    window.open('assets/elrey-ar.html');
-  }
   ngOnInit() {
     this.loadMap();
   }
 
+  goToHome() {
+    this.router.navigateByUrl('/home');
+  }
 }
