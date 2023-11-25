@@ -350,7 +350,55 @@ const routes: Routes = [
   {
     path: 'xihuingo',
     loadChildren: () => import('./hidalgo-zones/xihuingo/xihuingo.module').then( m => m.XihuingoPageModule)
+  },  {
+    path: 'calica',
+    loadChildren: () => import('./qroo-zones/calica/calica.module').then( m => m.CalicaPageModule)
   },
+  {
+    path: 'chankanbakan',
+    loadChildren: () => import('./qroo-zones/chankanbakan/chankanbakan.module').then( m => m.ChankanbakanPageModule)
+  },
+  {
+    path: 'caracol',
+    loadChildren: () => import('./qroo-zones/caracol/caracol.module').then( m => m.CaracolPageModule)
+  },
+  {
+    path: 'chachoben',
+    loadChildren: () => import('./qroo-zones/chachoben/chachoben.module').then( m => m.ChachobenPageModule)
+  },
+  {
+    path: 'dzibanche',
+    loadChildren: () => import('./qroo-zones/dzibanche/dzibanche.module').then( m => m.DzibanchePageModule)
+  },
+  {
+    path: 'kinichna',
+    loadChildren: () => import('./qroo-zones/kinichna/kinichna.module').then( m => m.KinichnaPageModule)
+  },
+  {
+    path: 'kohunlich',
+    loadChildren: () => import('./qroo-zones/kohunlich/kohunlich.module').then( m => m.KohunlichPageModule)
+  },
+  {
+    path: 'muyil',
+    loadChildren: () => import('./qroo-zones/muyil/muyil.module').then( m => m.MuyilPageModule)
+  },
+  {
+    path: 'oxtankah',
+    loadChildren: () => import('./qroo-zones/oxtankah/oxtankah.module').then( m => m.OxtankahPageModule)
+  },
+  {
+    path: 'playa-del-carmen',
+    loadChildren: () => import('./qroo-zones/playa-del-carmen/playa-del-carmen.module').then( m => m.PlayaDelCarmenPageModule)
+  },
+  {
+    path: 'san-miguelto',
+    loadChildren: () => import('./qroo-zones/san-miguelto/san-miguelto.module').then( m => m.SanMigueltoPageModule)
+  },
+  {
+    path: 'xcaret',
+    loadChildren: () => import('./qroo-zones/xcaret/xcaret.module').then( m => m.XcaretPageModule)
+  },
+
 
 
 ];
