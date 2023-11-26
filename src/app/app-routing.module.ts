@@ -398,6 +398,50 @@ const routes: Routes = [
     path: 'xcaret',
     loadChildren: () => import('./qroo-zones/xcaret/xcaret.module').then( m => m.XcaretPageModule)
   },
+  {
+    path: 'acanceh',
+    loadChildren: () => import('./Yuca-zone/acanceh/acanceh.module').then( m => m.AcancehPageModule)
+  },
+  {
+    path: 'balamcanche',
+    loadChildren: () => import('./Yuca-zone/balamcanche/balamcanche.module').then( m => m.BalamcanchePageModule)
+  },
+  {
+    path: 'chacmultun',
+    loadChildren: () => import('./Yuca-zone/chacmultun/chacmultun.module').then( m => m.ChacmultunPageModule)
+  },
+  {
+    path: 'kabah',
+    loadChildren: () => import('./Yuca-zone/kabah/kabah.module').then( m => m.KabahPageModule)
+  },
+  {
+    path: 'labna',
+    loadChildren: () => import('./Yuca-zone/labna/labna.module').then( m => m.LabnaPageModule)
+  },
+  {
+    path: 'loltun',
+    loadChildren: () => import('./Yuca-zone/loltun/loltun.module').then( m => m.LoltunPageModule)
+  },
+  {
+    path: 'mayapan',
+    loadChildren: () => import('./Yuca-zone/mayapan/mayapan.module').then( m => m.MayapanPageModule)
+  },
+  {
+    path: 'oxkintok',
+    loadChildren: () => import('./Yuca-zone/oxkintok/oxkintok.module').then( m => m.OxkintokPageModule)
+  },
+  {
+    path: 'sayil',
+    loadChildren: () => import('./Yuca-zone/sayil/sayil.module').then( m => m.SayilPageModule)
+  },
+  {
+    path: 'xlapak',
+    loadChildren: () => import('./Yuca-zone/xlapak/xlapak.module').then( m => m.XlapakPageModule)
+  },
+  {
+    path: 'uxmal',
+    loadChildren: () => import('./Yuca-zone/uxmal/uxmal.module').then( m => m.UxmalPageModule)
+  },
 
 
 

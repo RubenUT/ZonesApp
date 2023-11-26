@@ -162,6 +162,30 @@ export class HomePage {
       currentPage: 1,
       itemsPerPage: 6,
     },
+    {
+      nombre: 'Yucatan',
+      zonas: [
+        { nombre: 'Zona Arqueologica Acanceh', imagen: 'assets/img/yucatan-img/Acanceh-tbn.jpg', ruta: '/acanceh'},
+        { nombre: 'Zona Arqueologica Aké', imagen: 'assets/img/ake.jpeg', ruta: '/ake'},
+        { nombre: 'Zona arqueológica Balamcanché', imagen: 'assets/img/yucatan-img/balankanche-tbn.jpg', ruta: '/balamcanche'},
+        { nombre: 'Zona arqueológica Chacmultún', imagen: 'assets/img/yucatan-img/chacmultun-tbn.jpg', ruta: '/chacmultun'},
+        { nombre: 'Zona arqueológica Chichén Itzá', imagen: 'assets/img/chichen-itza.jpeg', ruta: '/chichen-itza'},
+        { nombre: 'Zona arqueológica Dzibilchaltún', imagen: 'assets/img/dzibilchaltun.jpg', ruta: '/dzibilchaltun'},
+        { nombre: 'Zona arqueológica Ek balam', imagen: 'assets/img/yucatan-img/ekbalam-tbn.jpeg', ruta: '/ek-balam'},
+        { nombre: 'Zona arqueológica Izamal', imagen: 'assets/img/yucatan-img/izamal-tbn.jpg', ruta: '/izamal'},
+        { nombre: 'Zona Arqueologica Kabah', imagen: 'assets/img/yucatan-img/Kabah-tbn.jpg', ruta: '/kabah'},
+        { nombre: 'Zona Arqueologica Labná', imagen: 'assets/img/yucatan-img/Labna-tbn.jpg', ruta: '/labna'},
+        { nombre: 'Zona Arqueologica Loltún', imagen: 'assets/img/yucatan-img/loltun-tbn.jpg', ruta: '/loltun'},
+        { nombre: 'Zona Arqueologica Mayapán', imagen: 'assets/img/yucatan-img/mayapan-tbn.jpg', ruta: '/mayapan'},
+        { nombre: 'Zona Arqueologica Oxkintok', imagen: 'assets/img/yucatan-img/oxkintok-tbn.jpg', ruta: '/oxkintok'},
+        { nombre: 'Zona arqueológica Sayil', imagen: 'assets/img/yucatan-img/sayil-tbn.jpg', ruta: '/sayil'},
+        { nombre: 'Zona arqueológica Xlapak', imagen: 'assets/img/yucatan-img/Xlapak-tbn.jpg', ruta: '/xlapak'},
+        { nombre: 'Zona arqueológica Xcambó', imagen: 'assets/img/yucatan-img/xcambo-tbn.jpeg', ruta: '/xcambo'},
+        { nombre: 'Zona arqueológica Uxmal', imagen: 'assets/img/yucatan-img/Uxmal-tbn.avif', ruta: '/uxmal'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 6,
+    },
   ];
 
   nextPage(estado: any) {

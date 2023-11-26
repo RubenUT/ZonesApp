@@ -28,7 +28,7 @@ export class EkBalamPage implements OnInit {
     // create map
     this.map = new google.maps.Map(mapEle, {
       center: myLatLng,
-      zoom: 12
+      zoom: 16
     });
   
     google.maps.event.addListenerOnce(this.map, 'idle', () => {
