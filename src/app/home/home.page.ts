@@ -186,6 +186,48 @@ export class HomePage {
       currentPage: 1,
       itemsPerPage: 6,
     },
+    {
+      nombre: 'Oxaca',
+      zonas: [
+        { nombre: 'Zona Arqueologica Atzompa', imagen: 'assets/img/oaxaca-img/atzompa-tbn.jpg', ruta: '/atzompa'},
+        { nombre: 'Zona Arqueologica Bocana del río copalita', imagen: 'assets/img/oaxaca-img/bocana-del-rio-copalita-tbn.jpg', ruta: '/bocana-del-rio-copalita'},
+        { nombre: 'Zona arqueológica Dainzú', imagen: 'assets/img/oaxaca-img/dainzu-tbn.jpg', ruta: '/dainzu'},
+        { nombre: 'Zona arqueológica Guiengola', imagen: 'assets/img/oaxaca-img/guiengola-tbn.jpg', ruta: '/guiengola'},
+        { nombre: 'Zona arqueológica Huamelupan', imagen: 'assets/img/oaxaca-img/huamelulpan-tbn.webp', ruta: '/huamelupan'},
+        { nombre: 'Zona arqueológica Lambityeco', imagen: 'assets/img/oaxaca-img/Lambityeco-tbn.jpeg', ruta: '/lambityeco'},
+        { nombre: 'Zona arqueológica Mitla', imagen: 'assets/img/oaxaca-img/mitla-tbn.jpg', ruta: '/mitla'},
+        { nombre: 'Zona arqueológica Monte albán', imagen: 'assets/img/oaxaca-img/monte-alban.tbn.jpg', ruta: '/monte-alban'},
+        { nombre: 'Zona Arqueologica Yagul', imagen: 'assets/img/oaxaca-img/yagul-tbn.jpg', ruta: '/yagul'},
+        { nombre: 'Zona Arqueologica Zaachila', imagen: 'assets/img/oaxaca-img/zaachila-tbn.png', ruta: '/zaachila'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 5,
+    },
+    {
+      nombre: 'Puebla',
+      zonas: [
+        { nombre: 'Zona Arqueologica Tepapayeca', imagen: 'assets/img/puebla-img/tepapayeca-tbn.jpg', ruta: '/tepapayeca'},
+        { nombre: 'Zona Arqueologica Cantona', imagen: 'assets/img/puebla-img/cantona-tbn.jpg', ruta: '/cantona'},
+        { nombre: 'Zona arqueológica Cholula', imagen: 'assets/img/puebla-img/cholula-tbn.jpg', ruta: '/cholula'},
+        { nombre: 'Zona arqueológica Los Cerritos de San Cristóbal', imagen: 'assets/img/puebla-img/cerritos-tbn.jpg', ruta: '/cerritos-de-san-cristobal'},
+        { nombre: 'Zona arqueológica Tepexi el Viejo', imagen: 'assets/img/puebla-img/el-viejo-tbn.jpg', ruta: '/tepexi-el-viejo'},
+        { nombre: 'Zona arqueológica Yohualichan', imagen: 'assets/img/puebla-img/yohualichan-tbn.jpg', ruta: '/yhualichan'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 6,
+    },
+    {
+      nombre: 'CDMX',
+      zonas: [
+        { nombre: 'Zona Arqueologica Cuicuilco', imagen: 'assets/img/CDMX-img/cuicuilco-tbn.jpg', ruta: '/cuicuilco'},
+        { nombre: 'Zona Arqueologica Templo mayor', imagen: 'assets/img/CDMX-img/templo-mayor-tbn.jpg', ruta: '/templo-mayor'},
+        { nombre: 'Zona arqueológica Mixcoac', imagen: 'assets/img/CDMX-img/mixcoac-tbn.jpg', ruta: '/mixcoac'},
+        { nombre: 'Zona arqueológica Tlatelolco', imagen: 'assets/img/CDMX-img/tlatelolco-tbn.jpg', ruta: '/tlatelolco'},
+        { nombre: 'Zona arqueológica Cerro de la estrella', imagen: 'assets/img/CDMX-img/cerro-de-la-estrella-tbn.png', ruta: '/cerro-de-la-estrella'},
+      ],
+      currentPage: 1,
+      itemsPerPage: 5,
+    },
   ];
 
   nextPage(estado: any) {

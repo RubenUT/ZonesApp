@@ -442,6 +442,90 @@ const routes: Routes = [
     path: 'uxmal',
     loadChildren: () => import('./Yuca-zone/uxmal/uxmal.module').then( m => m.UxmalPageModule)
   },
+  {
+    path: 'atzompa',
+    loadChildren: () => import('./oaxaca-zones/atzompa/atzompa.module').then( m => m.AtzompaPageModule)
+  },
+  {
+    path: 'bocana-del-rio-copalita',
+    loadChildren: () => import('./oaxaca-zones/bocana-del-rio-copalita/bocana-del-rio-copalita.module').then( m => m.BocanaDelRioCopalitaPageModule)
+  },
+  {
+    path: 'dainzu',
+    loadChildren: () => import('./oaxaca-zones/dainzu/dainzu.module').then( m => m.DainzuPageModule)
+  },
+  {
+    path: 'guiengola',
+    loadChildren: () => import('./oaxaca-zones/guiengola/guiengola.module').then( m => m.GuiengolaPageModule)
+  },
+  {
+    path: 'huamelupan',
+    loadChildren: () => import('./oaxaca-zones/huamelupan/huamelupan.module').then( m => m.HuamelupanPageModule)
+  },
+  {
+    path: 'lambityeco',
+    loadChildren: () => import('./oaxaca-zones/lambityeco/lambityeco.module').then( m => m.LambityecoPageModule)
+  },
+  {
+    path: 'mitla',
+    loadChildren: () => import('./oaxaca-zones/mitla/mitla.module').then( m => m.MitlaPageModule)
+  },
+  {
+    path: 'monte-alban',
+    loadChildren: () => import('./oaxaca-zones/monte-alban/monte-alban.module').then( m => m.MonteAlbanPageModule)
+  },
+  {
+    path: 'yagul',
+    loadChildren: () => import('./oaxaca-zones/yagul/yagul.module').then( m => m.YagulPageModule)
+  },
+  {
+    path: 'zaachila',
+    loadChildren: () => import('./oaxaca-zones/zaachila/zaachila.module').then( m => m.ZaachilaPageModule)
+  },
+  {
+    path: 'tepapayeca',
+    loadChildren: () => import('./puebla-zones/tepapayeca/tepapayeca.module').then( m => m.TepapayecaPageModule)
+  },
+  {
+    path: 'cantona',
+    loadChildren: () => import('./puebla-zones/cantona/cantona.module').then( m => m.CantonaPageModule)
+  },
+  {
+    path: 'cholula',
+    loadChildren: () => import('./puebla-zones/cholula/cholula.module').then( m => m.CholulaPageModule)
+  },
+  {
+    path: 'cerritos-de-san-cristobal',
+    loadChildren: () => import('./puebla-zones/cerritos-de-san-cristobal/cerritos-de-san-cristobal.module').then( m => m.CerritosDeSanCristobalPageModule)
+  },
+  {
+    path: 'tepexi-el-viejo',
+    loadChildren: () => import('./puebla-zones/tepexi-el-viejo/tepexi-el-viejo.module').then( m => m.TepexiElViejoPageModule)
+  },
+  {
+    path: 'yhualichan',
+    loadChildren: () => import('./puebla-zones/yhualichan/yhualichan.module').then( m => m.YhualichanPageModule)
+  },
+  {
+    path: 'cuicuilco',
+    loadChildren: () => import('./cdmx-zones/cuicuilco/cuicuilco.module').then( m => m.CuicuilcoPageModule)
+  },
+  {
+    path: 'templo-mayor',
+    loadChildren: () => import('./cdmx-zones/templo-mayor/templo-mayor.module').then( m => m.TemploMayorPageModule)
+  },
+  {
+    path: 'mixcoac',
+    loadChildren: () => import('./cdmx-zones/mixcoac/mixcoac.module').then( m => m.MixcoacPageModule)
+  },
+  {
+    path: 'tlatelolco',
+    loadChildren: () => import('./cdmx-zones/tlatelolco/tlatelolco.module').then( m => m.TlatelolcoPageModule)
+  },
+  {
+    path: 'cerro-de-la-estrella',
+    loadChildren: () => import('./cdmx-zones/cerro-de-la-estrella/cerro-de-la-estrella.module').then( m => m.CerroDeLaEstrellaPageModule)
+  },
 
 
 
