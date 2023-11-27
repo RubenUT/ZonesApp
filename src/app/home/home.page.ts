@@ -41,6 +41,23 @@ export class HomePage {
       itemsPerPage: 4,
     },
     {
+      nombre: 'Chiapas',
+      zonas: [
+        { nombre: 'Zona arqueológica de Bonampak', imagen: 'assets/img/chiapas-img/bonampak-tbn.png', ruta: '/bonampak'},
+        { nombre: 'Zona arqueológica de Chiapa de Corzo', imagen: 'assets/img/chiapas-img/chiapa-de-corzo-tbn.png', ruta: '/chiapa-de-corzo'},
+        { nombre: 'Zona arqueológica de Chinkultic', imagen: 'assets/img/chiapas-img/chinkultic-tbn.png', ruta: '/chinkultic'},
+        { nombre: 'Zona arqueológica de Iglesia Vieja', imagen: 'assets/img/chiapas-img/iglesia-vieja-tbn.png', ruta: '/iglesia-vieja'},
+        { nombre: 'Zona arqueológica de Izapa', imagen: 'assets/img/chiapas-img/izapa-tbn.png', ruta: '/izapa'},
+        { nombre: 'Zona arqueológica de Lagartero', imagen: 'assets/img/chiapas-img/lagartero-tbn.png', ruta: '/lagartero'},
+        { nombre: 'Zona arqueológica de Palenque', imagen: 'assets/img/chiapas-img/palenque-tbn.png', ruta: '/palenque'},
+        { nombre: 'Zona arqueológica de Tenam-Puente', imagen: 'assets/img/chiapas-img/tenam-puente-tbn.png', ruta: '/tenam-puente'},
+        { nombre: 'Zona arqueológica de Toniná', imagen: 'assets/img/chiapas-img/tonina-tbn.png', ruta: '/tonina'},
+        { nombre: 'Zona arqueológica de Yaxchilán', imagen: 'assets/img/chiapas-img/yaxchilan-tbn.png', ruta: '/yaxchilan'}
+      ],
+      currentPage: 1,
+      itemsPerPage: 5,
+    },
+    {
       nombre: 'Estado de México',
       zonas: [
         { nombre: 'Zona arqueológica de Ixtapaluca', imagen: 'assets/img/edomex-img/ixtapaluca-tbn.jpeg', ruta: '/ixtapaluca'},

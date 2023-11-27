@@ -526,7 +526,47 @@ const routes: Routes = [
   {
     path: 'cerro-de-la-estrella',
     loadChildren: () => import('./cdmx-zones/cerro-de-la-estrella/cerro-de-la-estrella.module').then( m => m.CerroDeLaEstrellaPageModule)
+  },  {
+    path: 'bonampak',
+    loadChildren: () => import('./chiapas-zones/bonampak/bonampak.module').then( m => m.BonampakPageModule)
   },
+  {
+    path: 'chiapa-de-corzo',
+    loadChildren: () => import('./chiapas-zones/chiapa-de-corzo/chiapa-de-corzo.module').then( m => m.ChiapaDeCorzoPageModule)
+  },
+  {
+    path: 'chinkultic',
+    loadChildren: () => import('./chiapas-zones/chinkultic/chinkultic.module').then( m => m.ChinkulticPageModule)
+  },
+  {
+    path: 'iglesia-vieja',
+    loadChildren: () => import('./chiapas-zones/iglesia-vieja/iglesia-vieja.module').then( m => m.IglesiaViejaPageModule)
+  },
+  {
+    path: 'izapa',
+    loadChildren: () => import('./chiapas-zones/izapa/izapa.module').then( m => m.IzapaPageModule)
+  },
+  {
+    path: 'lagartero',
+    loadChildren: () => import('./chiapas-zones/lagartero/lagartero.module').then( m => m.LagarteroPageModule)
+  },
+  {
+    path: 'palenque',
+    loadChildren: () => import('./chiapas-zones/palenque/palenque.module').then( m => m.PalenquePageModule)
+  },
+  {
+    path: 'tenam-puente',
+    loadChildren: () => import('./chiapas-zones/tenam-puente/tenam-puente.module').then( m => m.TenamPuentePageModule)
+  },
+  {
+    path: 'tonina',
+    loadChildren: () => import('./chiapas-zones/tonina/tonina.module').then( m => m.ToninaPageModule)
+  },
+  {
+    path: 'yaxchilan',
+    loadChildren: () => import('./chiapas-zones/yaxchilan/yaxchilan.module').then( m => m.YaxchilanPageModule)
+  },
+
 
 
 
