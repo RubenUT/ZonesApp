@@ -37,27 +37,27 @@ const routes: Routes = [
   },
   {
     path: 'ek-balam',
-    loadChildren: () => import('./ek-balam/ek-balam.module').then( m => m.EkBalamPageModule)
+    loadChildren: () => import('./Yuca-zone/ek-balam/ek-balam.module').then( m => m.EkBalamPageModule)
   },
   {
     path: 'chichen-itza',
-    loadChildren: () => import('./chichen-itza/chichen-itza.module').then( m => m.ChichenItzaPageModule)
+    loadChildren: () => import('./Yuca-zone/chichen-itza/chichen-itza.module').then( m => m.ChichenItzaPageModule)
   },
   {
     path: 'izamal',
-    loadChildren: () => import('./izamal/izamal.module').then( m => m.IzamalPageModule)
+    loadChildren: () => import('./Yuca-zone/izamal/izamal.module').then( m => m.IzamalPageModule)
   },
   {
     path: 'ake',
-    loadChildren: () => import('./ake/ake.module').then( m => m.AkePageModule)
+    loadChildren: () => import('./Yuca-zone/ake/ake.module').then( m => m.AkePageModule)
   },
   {
     path: 'xcambo',
-    loadChildren: () => import('./xcambo/xcambo.module').then( m => m.XcamboPageModule)
+    loadChildren: () => import('./Yuca-zone/xcambo/xcambo.module').then( m => m.XcamboPageModule)
   },
   {
     path: 'dzibilchaltun',
-    loadChildren: () => import('./dzibilchaltun/dzibilchaltun.module').then( m => m.DzibilchaltunPageModule)
+    loadChildren: () => import('./Yuca-zone/dzibilchaltun/dzibilchaltun.module').then( m => m.DzibilchaltunPageModule)
   },
   {
     path: 'el-vallecito',
@@ -350,7 +350,8 @@ const routes: Routes = [
   {
     path: 'xihuingo',
     loadChildren: () => import('./hidalgo-zones/xihuingo/xihuingo.module').then( m => m.XihuingoPageModule)
-  },  {
+  },
+  {
     path: 'calica',
     loadChildren: () => import('./qroo-zones/calica/calica.module').then( m => m.CalicaPageModule)
   },
