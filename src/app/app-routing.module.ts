@@ -526,7 +526,8 @@ const routes: Routes = [
   {
     path: 'cerro-de-la-estrella',
     loadChildren: () => import('./cdmx-zones/cerro-de-la-estrella/cerro-de-la-estrella.module').then( m => m.CerroDeLaEstrellaPageModule)
-  },  {
+  },
+  {
     path: 'bonampak',
     loadChildren: () => import('./chiapas-zones/bonampak/bonampak.module').then( m => m.BonampakPageModule)
   },
@@ -566,6 +567,146 @@ const routes: Routes = [
     path: 'yaxchilan',
     loadChildren: () => import('./chiapas-zones/yaxchilan/yaxchilan.module').then( m => m.YaxchilanPageModule)
   },
+  {
+    path: 'san-felipe-los-alzati',
+    loadChildren: () => import('./michoacan-zones/san-felipe-los-alzati/san-felipe-los-alzati.module').then( m => m.SanFelipeLosAlzatiPageModule)
+  },
+  {
+    path: 'huandacareo-la-nopalera',
+    loadChildren: () => import('./michoacan-zones/huandacareo-la-nopalera/huandacareo-la-nopalera.module').then( m => m.HuandacareoLaNopaleraPageModule)
+  },
+  {
+    path: 'tres-cerritos',
+    loadChildren: () => import('./michoacan-zones/tres-cerritos/tres-cerritos.module').then( m => m.TresCerritosPageModule)
+  },
+  {
+    path: 'tzintzuntzan',
+    loadChildren: () => import('./michoacan-zones/tzintzuntzan/tzintzuntzan.module').then( m => m.TzintzuntzanPageModule)
+  },
+  {
+    path: 'ihuatzio',
+    loadChildren: () => import('./michoacan-zones/ihuatzio/ihuatzio.module').then( m => m.IhuatzioPageModule)
+  },
+  {
+    path: 'tingambato',
+    loadChildren: () => import('./michoacan-zones/tingambato/tingambato.module').then( m => m.TingambatoPageModule)
+  },
+  {
+    path: 'arroyo-seco',
+    loadChildren: () => import('./guanajuato-zones/arroyo-seco/arroyo-seco.module').then( m => m.ArroyoSecoPageModule)
+  },
+  {
+    path: 'canada-de-la-virgen',
+    loadChildren: () => import('./guanajuato-zones/canada-de-la-virgen/canada-de-la-virgen.module').then( m => m.CanadaDeLaVirgenPageModule)
+  },
+  {
+    path: 'el-coporo',
+    loadChildren: () => import('./guanajuato-zones/el-coporo/el-coporo.module').then( m => m.ElCoporoPageModule)
+  },
+  {
+    path: 'peralta',
+    loadChildren: () => import('./guanajuato-zones/peralta/peralta.module').then( m => m.PeraltaPageModule)
+  },
+  {
+    path: 'plazuelas',
+    loadChildren: () => import('./guanajuato-zones/plazuelas/plazuelas.module').then( m => m.PlazuelasPageModule)
+  },
+  {
+    path: 'cacaxtla',
+    loadChildren: () => import('./tlaxcala-zones/cacaxtla/cacaxtla.module').then( m => m.CacaxtlaPageModule)
+  },
+  {
+    path: 'ocotelulco',
+    loadChildren: () => import('./tlaxcala-zones/ocotelulco/ocotelulco.module').then( m => m.OcotelulcoPageModule)
+  },
+  {
+    path: 'tizatlan',
+    loadChildren: () => import('./tlaxcala-zones/tizatlan/tizatlan.module').then( m => m.TizatlanPageModule)
+  },
+  {
+    path: 'tecoaque',
+    loadChildren: () => import('./tlaxcala-zones/tecoaque/tecoaque.module').then( m => m.TecoaquePageModule)
+  },
+  {
+    path: 'cuarenta-casas',
+    loadChildren: () => import('./chihuahua-zones/cuarenta-casas/cuarenta-casas.module').then( m => m.CuarentaCasasPageModule)
+  },
+  {
+    path: 'cueva-grande',
+    loadChildren: () => import('./chihuahua-zones/cueva-grande/cueva-grande.module').then( m => m.CuevaGrandePageModule)
+  },
+  {
+    path: 'cueva-de-la-olla',
+    loadChildren: () => import('./chihuahua-zones/cueva-de-la-olla/cueva-de-la-olla.module').then( m => m.CuevaDeLaOllaPageModule)
+  },
+  {
+    path: 'huapoca',
+    loadChildren: () => import('./chihuahua-zones/huapoca/huapoca.module').then( m => m.HuapocaPageModule)
+  },
+  {
+    path: 'paquime',
+    loadChildren: () => import('./chihuahua-zones/paquime/paquime.module').then( m => m.PaquimePageModule)
+  },
+  {
+    path: 'ixtepete',
+    loadChildren: () => import('./jalisco-zones/ixtepete/ixtepete.module').then( m => m.IxtepetePageModule)
+  },
+  {
+    path: 'guachimontones',
+    loadChildren: () => import('./jalisco-zones/guachimontones/guachimontones.module').then( m => m.GuachimontonesPageModule)
+  },
+  {
+    path: 'alta-vista-chalchihuites',
+    loadChildren: () => import('./zacatecas-zones/alta-vista-chalchihuites/alta-vista-chalchihuites.module').then( m => m.AltaVistaChalchihuitesPageModule)
+  },
+  {
+    path: 'cerro-de-las-ventanas',
+    loadChildren: () => import('./zacatecas-zones/cerro-de-las-ventanas/cerro-de-las-ventanas.module').then( m => m.CerroDeLasVentanasPageModule)
+  },
+  {
+    path: 'la-quemada',
+    loadChildren: () => import('./zacatecas-zones/la-quemada/la-quemada.module').then( m => m.LaQuemadaPageModule)
+  },
+  {
+    path: 'el-chanal',
+    loadChildren: () => import('./colima-zones/el-chanal/el-chanal.module').then( m => m.ElChanalPageModule)
+  },
+  {
+    path: 'la-campana',
+    loadChildren: () => import('./colima-zones/la-campana/la-campana.module').then( m => m.LaCampanaPageModule)
+  },
+  {
+    path: 'tamohi',
+    loadChildren: () => import('./slp-zones/tamohi/tamohi.module').then( m => m.TamohiPageModule)
+  },
+  {
+    path: 'tamtoc',
+    loadChildren: () => import('./slp-zones/tamtoc/tamtoc.module').then( m => m.TamtocPageModule)
+  },
+  {
+    path: 'balcon-de-moctezuma',
+    loadChildren: () => import('./tamaulipas-zones/balcon-de-moctezuma/balcon-de-moctezuma.module').then( m => m.BalconDeMoctezumaPageModule)
+  },
+  {
+    path: 'el-sabinito',
+    loadChildren: () => import('./tamaulipas-zones/el-sabinito/el-sabinito.module').then( m => m.ElSabinitoPageModule)
+  },
+  {
+    path: 'las-flores',
+    loadChildren: () => import('./tamaulipas-zones/las-flores/las-flores.module').then( m => m.LasFloresPageModule)
+  },
+  {
+    path: 'ixtlan-del-rio',
+    loadChildren: () => import('./nayarit-zones/ixtlan-del-rio/ixtlan-del-rio.module').then( m => m.IxtlanDelRioPageModule)
+  },  {
+    path: 'sierra-de-san-francisco',
+    loadChildren: () => import('./bcs-zones/sierra-de-san-francisco/sierra-de-san-francisco.module').then( m => m.SierraDeSanFranciscoPageModule)
+  },
+  {
+    path: 'zona-paleontologica-rincon-colorado',
+    loadChildren: () => import('./coahuila-zones/zona-paleontologica-rincon-colorado/zona-paleontologica-rincon-colorado.module').then( m => m.ZonaPaleontologicaRinconColoradoPageModule)
+  },
+
 
 
 
